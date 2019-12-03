@@ -9,7 +9,6 @@
 - belongs_to :user
 
 ## users table
-
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: index:true, null:false, unique:true|
