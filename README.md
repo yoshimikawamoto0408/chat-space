@@ -1,4 +1,4 @@
-## groups_usersテーブル
+## groups_users
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
