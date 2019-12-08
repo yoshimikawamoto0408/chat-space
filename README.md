@@ -14,6 +14,7 @@
 |name|string|null: index:true, null:false, unique:true|
 |mail|string|null: false|
 
+<<<<<<< Updated upstream
 ### Association
 - has_many :groups,through:members
 - has_many :messages
@@ -39,3 +40,31 @@
 ### Association
 - belongs_to :user
 - belongs_to :group
+=======
+### Association
+- has_many:groups,through:members
+- has_many:messages
+- has_many:members
+
+## message table
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+|image|string|    |
+|group|references|foreign_key: true|
+|user|references|foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group
+
+## groups table
+|Column|Type|Options|
+|------|----|-------|
+|name|string|index: true, null: false, unipue: true|
+
+### Association
+- has_many :users, through: :group_users
+- has_many :group_users
+- has_many :messages
+>>>>>>> Stashed changes
