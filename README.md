@@ -1,4 +1,5 @@
-## groups_users
+## groups_users
+
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
@@ -29,13 +30,13 @@
 - has_many :group_users
 - has_many :messages
 
-## message table
+## message table
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|   |
-|group|references|foreign_key: true|
+|body|text|null: false|
+|image|string|   |
+|group|references|foreign_key: true|
 
-### Association
-- belongs_to :user
-- belongs_to :groups
+### Association
+- belongs_to :user
+- belongs_to :groups
